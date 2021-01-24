@@ -8,7 +8,7 @@ class PostTest(TestCase):
 
         self.assertEqual('Test', p.title)
         self.assertEqual('Test Content', p.content)
-        
+
 
     def test_repr(self):
         p = Post('Test', 'Test Content')
@@ -19,7 +19,7 @@ class PostTest(TestCase):
         self.assertEqual(actual, expected)
 
 
-    def test_json_returns_post_as_dictionary(self):
+    def test_json(self):
         p = Post('Test', 'Test Content')
 
         expected = {
