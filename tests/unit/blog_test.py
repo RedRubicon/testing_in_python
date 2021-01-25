@@ -14,7 +14,7 @@ class BlogTest(TestCase):
     def test_repr(self):
         b = Blog('Test', 'Test Author')
 
-        expected = "Test: Test Author"
+        expected = "Test: Test Author (0 posts)"
         actual = repr(b)
 
         self.assertEqual(actual, expected)
